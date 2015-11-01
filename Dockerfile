@@ -8,4 +8,4 @@ ADD . /data/psptoolchain
 
 WORKDIR /data/psptoolchain
 
-RUN ./toolchain-sudo.sh 
+RUN ./toolchain-sudo.sh && ./toolchain-sudo.sh clean
