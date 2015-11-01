@@ -9,3 +9,5 @@ ADD . /data/psptoolchain
 WORKDIR /data/psptoolchain
 
 RUN ./toolchain-sudo.sh && ./toolchain-sudo.sh clean
+
+ENV PATH="$PATH:/usr/local/pspdev/bin/"
