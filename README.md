@@ -1,3 +1,8 @@
+Docker-image for psptoolchain
+=============================
+
+This image in itself is useless and only used as a base for pspsdk
+
 What does this do?
 ==================
 
