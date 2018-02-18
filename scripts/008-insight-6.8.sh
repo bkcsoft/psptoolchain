@@ -1,12 +1,12 @@
 #!/bin/bash
-# insight-6.8.sh by Dan Peori (danpeori@oopo.net)
+# insight-6.8.sh by Naomi Peori (naomi@peori.ca)
 exit;
 
  ## Exit on errors
  set -e
 
  ## Download the source code if it does not already exist.
- download_and_extract ftp://sourceware.org/pub/insight/releases/insight-6.8a.tar.bz2 insight-6.8
+ download_and_extract https://sourceware.org/pub/insight/releases/insight-6.8a.tar.bz2 insight-6.8
 
  ## Enter the source directory and patch the source code.
  cd insight-6.8

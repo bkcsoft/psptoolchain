@@ -26,13 +26,23 @@ How do I use it?
 
         ./toolchain.sh
 
+> NOTE: If you have issues with compiling try increasing the amount of memory
+> available to your system by creating a swapfile.
+>
+>     dd if=/dev/zero of=/swapfile bs=1M count=2048
+>     chmod 600 /swapfile
+>     mkswap /swapfile
+>     swapon /swapfile
+>
+> After you are done use `swapoff -a` disable the swapfile. Finally you can
+> remove it with `rm`.
 
 Ubuntu
 ------
 
 1. Install the required packages by running.
 
-        sudo apt-get install g++ build-essential autoconf automake automake1.9 cmake doxygen bison flex libncurses5-dev libsdl1.2-dev libreadline-dev libusb-dev texinfo libgmp3-dev libmpfr-dev libelf-dev libmpc-dev libfreetype6-dev zlib1g-dev libtool libtool-bin subversion git tcl unzip
+        sudo apt-get install g++ build-essential autoconf automake cmake doxygen bison flex libncurses5-dev libsdl1.2-dev libreadline-dev libusb-dev texinfo libgmp3-dev libmpfr-dev libelf-dev libmpc-dev libfreetype6-dev zlib1g-dev libtool libtool-bin subversion git tcl unzip wget
 
 2. Build and install the toolchain and SDK.
 
